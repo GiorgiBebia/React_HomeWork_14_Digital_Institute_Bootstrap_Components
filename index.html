@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-dark">
+          <li class="breadcrumb-item active text-primary" aria-current="page">
+            Home
+          </li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-danger">
+          <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active text-secondary" aria-current="page">
+            Library
+          </li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-warning">
+          <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+          <li class="breadcrumb-item text-secondary">
+            <a href="#">Library</a>
+          </li>
+          <li class="breadcrumb-item active text-success" aria-current="page">
+            Data
+          </li>
+        </ol>
+      </nav>
+    </main>
+
+    <section>
+      <div class="container mt-4">
+        <div class="dropdown">
+          <button
+            class="btn btn-success dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item bg-danger" href="#">Action</a></li>
+            <li>
+              <a class="dropdown-item bg-warning" href="#">Another action</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item bg-info" href="#">Something else here</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Accordion #1
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">აქ წესით ტექსტი უნდა იყოს</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Accordion #2
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">აქ კიდევ სხვა ტექსტი</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Accordion #3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">აქ კიდევ განსხვავებული ტექსტი</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
